@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Pamirs.BI.Etl.App": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SERVICE_NAME": "ik-meeting"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="MySqlConnector" Version="2.1.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="IK\MeetingService.cs">
+        <DependentUpon>IMeetingService.cs</DependentUpon>
+      </Compile>
+      <Compile Update="EltHostedServiceFactory.cs">
+        <DependentUpon>IEltHostedServiceFactory.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="DWD_ADS" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ConsoleDemo.Domain\ConsoleDemo.Domain.csproj" />
+      <ProjectReference Include="..\ConsoleDemo.Infrastructure\ConsoleDemo.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
