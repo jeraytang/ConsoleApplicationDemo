@@ -24,7 +24,7 @@ namespace ConsoleDemo.App
             var logFile = Environment.GetEnvironmentVariable("LOG");
             if (string.IsNullOrEmpty(logFile))
             {
-                logFile = Path.Combine(AppContext.BaseDirectory, "Pamirs.OneData.BiEtl.App.log");
+                logFile = Path.Combine(AppContext.BaseDirectory, "OneData.BiEtl.App.log");
             }
 
             Log.Logger = new LoggerConfiguration()
